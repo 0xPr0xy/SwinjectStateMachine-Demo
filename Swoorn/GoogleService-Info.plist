@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>183922004859-k98b5seqr6uml4ejbhdu66lnjp2s8rh7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.183922004859-k98b5seqr6uml4ejbhdu66lnjp2s8rh7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDRe7C0-O-7y58K9pxSIUjZZ8hu74sFlQQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>183922004859</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>nl.pydev.Swoorn</string>
+	<key>PROJECT_ID</key>
+	<string>swoorn-d8aeb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>swoorn-d8aeb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:183922004859:ios:2768e206b08e2a13</string>
+	<key>DATABASE_URL</key>
+	<string>https://swoorn-d8aeb.firebaseio.com</string>
+</dict>
+</plist>

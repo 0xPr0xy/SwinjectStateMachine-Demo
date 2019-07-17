@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x8F-Cl-xu1">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Authenticated-->
+        <scene sceneID="2ju-uL-FN6">
+            <objects>
+                <viewController storyboardIdentifier="authenticated" id="a70-mc-QYN" customClass="AuthenticatedViewController" customModule="Swoorn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7hc-Ef-rOV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URi-Ns-fh2">
+                                <rect key="frame" x="20" y="244" width="335" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutPressed:" destination="a70-mc-QYN" eventType="touchUpInside" id="gkT-dD-GJD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYt-of-OEK">
+                                <rect key="frame" x="20" y="294" width="335" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetPressed:" destination="a70-mc-QYN" eventType="touchUpInside" id="Do2-72-vG2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QQ-Vf-X55">
+                                <rect key="frame" x="20" y="344" width="335" height="30"/>
+                                <state key="normal" title="Screen with Network"/>
+                                <connections>
+                                    <segue destination="Kge-wR-9ee" kind="show" id="AhJ-nM-RUf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="I8m-sb-cvN" firstAttribute="trailing" secondItem="AYt-of-OEK" secondAttribute="trailing" constant="20" id="23g-qu-YgR"/>
+                            <constraint firstItem="URi-Ns-fh2" firstAttribute="top" secondItem="I8m-sb-cvN" secondAttribute="top" constant="200" id="72e-Jk-hOw"/>
+                            <constraint firstItem="1QQ-Vf-X55" firstAttribute="leading" secondItem="I8m-sb-cvN" secondAttribute="leading" constant="20" id="BIB-7h-AoZ"/>
+                            <constraint firstItem="AYt-of-OEK" firstAttribute="top" secondItem="URi-Ns-fh2" secondAttribute="bottom" constant="20" id="SIa-wH-A5J"/>
+                            <constraint firstItem="URi-Ns-fh2" firstAttribute="leading" secondItem="I8m-sb-cvN" secondAttribute="leading" constant="20" id="TLO-sS-3KG"/>
+                            <constraint firstItem="1QQ-Vf-X55" firstAttribute="top" secondItem="AYt-of-OEK" secondAttribute="bottom" constant="20" id="YWu-on-hOe"/>
+                            <constraint firstItem="I8m-sb-cvN" firstAttribute="trailing" secondItem="URi-Ns-fh2" secondAttribute="trailing" constant="20" id="b1J-ez-Kus"/>
+                            <constraint firstItem="AYt-of-OEK" firstAttribute="leading" secondItem="I8m-sb-cvN" secondAttribute="leading" constant="20" id="dZm-KY-lUs"/>
+                            <constraint firstItem="I8m-sb-cvN" firstAttribute="trailing" secondItem="1QQ-Vf-X55" secondAttribute="trailing" constant="20" id="fGE-Da-koG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I8m-sb-cvN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Authenticated" id="Prb-dj-7AU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="70h-Gr-Wp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863.2" y="-90.404797601199405"/>
+        </scene>
+        <!--Network Logout-->
+        <scene sceneID="vpt-Xi-z40">
+            <objects>
+                <viewController storyboardIdentifier="networkLogout" title="Network Logout" id="Kge-wR-9ee" customClass="NetworkLogoutViewController" customModule="Swoorn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nHP-LQ-om4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUm-b6-337">
+                                <rect key="frame" x="60" y="318" width="255" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fake Network Logout"/>
+                                <connections>
+                                    <action selector="networkLogoutPressed:" destination="Kge-wR-9ee" eventType="touchUpInside" id="chj-TP-zZC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0pj-aN-LB0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="le1-Ov-f70" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2708" y="-90.404797601199405"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O6n-6c-scu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x8F-Cl-xu1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zgg-pC-a24">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="a70-mc-QYN" kind="relationship" relationship="rootViewController" id="e9t-Ea-kcl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FG8-5x-CcR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="-90.404797601199405"/>
+        </scene>
+    </scenes>
+</document>

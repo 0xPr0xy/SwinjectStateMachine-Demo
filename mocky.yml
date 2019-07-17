@@ -1,0 +1,20 @@
+sources:
+  include:
+    - ./Swoorn
+templates:
+  - ./Pods/SwiftyMocky/Sources/Templates
+output:
+  ./SwoornTests
+args:
+  testable:
+    - Swoorn
+  import:
+     - SwinjectStateMachine
+  excludedSwiftLintRules:
+    - file_length
+    - comma
+    - trailing_whitespace
+    - trailing_newline
+    - identifier_name
+    - line_length
+    - vertical_whitespace

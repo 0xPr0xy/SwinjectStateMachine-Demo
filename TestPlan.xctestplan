@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "commandLineArgumentEntries" : [
+
+    ]
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Swoorn.xcodeproj",
+        "identifier" : "A1B0923322CE44B300B49E74",
+        "name" : "SwoornTests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -252,6 +252,7 @@
 		A1652616227C522A006AF109 /* Swoorn */ = {
 			isa = PBXGroup;
 			children = (
+				A19EF07022E0836C0080C61F /* Resources */,
 				A1B091D822CD070100B49E74 /* Config.swift */,
 				A1AECBDC2280531E000CBDB4 /* Application */,
 				A1AECBDD22805335000CBDB4 /* States */,
@@ -272,6 +273,13 @@
 				A11B459A22D5284800645A9C /* TourDependencies.swift */,
 			);
 			path = Tour;
+			sourceTree = "<group>";
+		};
+		A19EF07022E0836C0080C61F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A1AECBD02280386D000CBDB4 /* Unauthenticated */ = {
